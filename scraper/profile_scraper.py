@@ -4,7 +4,7 @@ import re
 from typing import List, Dict, Optional
 import logging
 
-class ListrawlerScraper(BaseScraper):
+class ProfileScraper(BaseScraper):
     def __init__(self, base_url: str, max_depth: int = 2):
         super().__init__(base_url)
         self.max_depth = max_depth

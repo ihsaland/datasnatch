@@ -5,7 +5,7 @@ import os
 from typing import List, Dict
 from dotenv import load_dotenv
 
-from scraper.listrawler_scraper import ListrawlerScraper
+from scraper.profile_scraper import ProfileScraper
 from analyzer.profile_analyzer import ProfileAnalyzer
 from visualizer.profile_visualizer import ProfileVisualizer
 
@@ -17,7 +17,7 @@ class DataSnatch:
         self.setup_directories()
         
         # Initialize components
-        self.scraper = ListrawlerScraper(base_url)
+        self.scraper = ProfileScraper(base_url)
         self.analyzer = ProfileAnalyzer(use_apis=use_apis)
         self.visualizer = ProfileVisualizer()
         
